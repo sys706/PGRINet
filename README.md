@@ -1,15 +1,5 @@
-# spa-former
-Code for the paper titled "Sparse Self-Attention Transformer for Image Inpainting".
-
-
-<br>
-This is the code for Sparse Self-Attention Transformer (Spa-former) to reconstruct corrupted image. Given one image and mask, the proposed **Spa-former** model is able to reconstruct masked regions. This code is adapted from an initial fork of [PIC](https://github.com/lyndonzheng/Pluralistic-Inpainting) implementation.
-
-## Illustration of Spa-former
-![](https://github.com/huangwenwenlili/spa-former/blob/main/images/spa-former-architecture.png)
-
-Learning-based image inpainting methods have made remarkable progress in recent years. Nevertheless, these methods still suffer from issues such as blurring, artifacts, and inconsistent contents. The use of vanilla convolution kernels, which have limited perceptual fields and spatially invariant kernel coefficients, is one of the main causes for these problems. In contrast, the multi-headed attention in the transformer can effectively model non-local relations among input features by generating adaptive attention scores. Therefore, this paper explores the feasibility of employing the transformer model for the image inpainting task. However, the multi-headed attention transformer blocks pose a significant challenge due to their overwhelming computational cost. To address this issue, we propose a novel U-Net style transformer-based network for the inpainting task, called the sparse self-attention transformer (Spa-former). The Spa-former retains the long-range modeling capacity of transformer blocks while reducing the computational burden. It incorporates a new channel attention approximation algorithm that reduces attention calculation to linear complexity. Additionally, it replaces the canonical softmax function with the ReLU function to generate a sparse attention map that effectively excludes irrelevant features. As a result, the Spa-former achieves effective long-range feature modeling with fewer parameters and lower computational resources. Our empirical results on challenging benchmarks demonstrate the superior performance of our proposed Spa-former over state-of-the-art approaches.
-
+# PGRINet
+Code for the paper titled "Joint pluralistic generation and realistic inpainting of occluded facial images".
 
 
 # Getting started
