@@ -58,6 +58,8 @@ python train_fine.py --model 'TCAM_woFine' --model_fine 'TCAM_Fine' --niter 20 -
 ```
 python test_coarse.py --model 'TCAM_Fine' --batchSize 1 --how_many [number_of_diverse_results_to_generation] --nsampling [number_of_diverse_results_to_sample] --which_iter 'latest' --results_dir [saved_result_path] --checkpoints_dir [save_coarse_model_path] --name [exp_coarse_name] --mask_file [mask_path] --img_file [image_path] --trainData [testing_image_names]
 ```
+Notes of testing: 
+- `--how_many`: How many completion results do you want?
 
 
 ### Step 2:
